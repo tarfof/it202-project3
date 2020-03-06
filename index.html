@@ -190,11 +190,11 @@ function updateGameArea() {
   }
   for (i = 0; i < harm.length; i += 1) {
 	  harm[i].x += speed;
+	  speed = speed - 0.1;
 	  harm[i].update();
   }
 	
   	if(myGameArea.frameNo % 1000 == 0){
-      	speed--;
 		level++;
   	}
 	
